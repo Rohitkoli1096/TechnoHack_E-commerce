@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Product - Modern E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">⚡ LUXE</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="icon-btn" id="darkModeToggle" title="Toggle dark mode">🌙</button>
+                <button class="icon-btn" id="cartBtn" title="Shopping cart">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80" alt="Premium Wireless Headphones">
+                    <div class="zoom-indicator">Click to zoom</div>
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=150&q=80" alt="View 1">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=150&q=80" alt="View 2">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=150&q=80" alt="View 3">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=150&q=80" alt="View 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <h1 class="product-title">Premium Wireless Headphones Pro Max</h1>
+
+                <div class="rating">
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star" style="opacity: 0.5;">★</span>
+                    </div>
+                    <span class="review-info">4.5 out of 5 (<span class="review-link" onclick="app.scrollToReviews()">2,847 reviews</span>)</span>
+                </div>
+
+                <div class="pricing">
+                    <div>
+                        <div class="price">$299</div>
+                        <div class="original-price">$399</div>
+                    </div>
+                    <div class="discount">Save 25%</div>
+                </div>
+
+                <p class="description">
+                    Experience premium audio quality with our flagship wireless headphones. Featuring active noise cancellation, 40-hour battery life, and premium comfort for all-day wear. Perfect for music lovers, professionals, and travelers.
+                </p>
+
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🎵</div>
+                        <div class="feature-text">
+                            <strong>Hi-Fi Audio</strong>
+                            <small>Studio-quality sound</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔊</div>
+                        <div class="feature-text">
+                            <strong>Active Noise</strong>
+                            <small>ANC Technology</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔋</div>
+                        <div class="feature-text">
+                            <strong>40Hr Battery</strong>
+                            <small>Ultra long-lasting</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎮</div>
+                        <div class="feature-text">
+                            <strong>Multi-Device</strong>
+                            <small>Seamless pairing</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selectors">
+                    <div class="selector-group">
+                        <label class="selector-label">Choose Color</label>
+                        <div class="options">
+                            <button class="option-btn active" data-color="Black">Black</button>
+                            <button class="option-btn" data-color="Silver">Silver</button>
+                            <button class="option-btn" data-color="Rose Gold">Rose Gold</button>
+                            <button class="option-btn" data-color="Navy">Navy</button>
+                        </div>
+                    </div>
+
+                    <div class="selector-group">
+                        <label class="selector-label">Select Variant</label>
+                        <div class="options">
+                            <button class="option-btn active" data-variant="Standard">Standard</button>
+                            <button class="option-btn" data-variant="Pro">Pro</button>
+                            <button class="option-btn" data-variant="Max">Max</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selector-group">
+                    <label class="selector-label">Quantity</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" id="decreaseQty">−</button>
+                        <input type="number" class="qty-input" id="quantity" value="1" min="1">
+                        <button class="qty-btn" id="increaseQty">+</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="addToCartBtn">
+                        <span>🛒</span> Add to Cart
+                    </button>
+                    <button class="wishlist-btn" id="wishlistBtn" title="Add to wishlist">♡</button>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="delivery-item">
+                        <div class="delivery-icon">🚚</div>
+                        <div class="delivery-text">
+                            <strong>Free Shipping</strong>
+                            <small>On orders over $50</small>
+                        </div>
+                    </div>
+                    <div class="delivery-item">
+                        <div class="delivery-icon">↩️</div>
+                        <div class="delivery-text">
+                            <strong>30-Day Returns</strong>
+                            <small>Hassle-free returns</small>
+                        </div>
+                    </div>
+                    <div class="delivery-item">
+                        <div class="delivery-icon">🛡️</div>
+                        <div class="delivery-text">
+                            <strong>2-Year Warranty</strong>
+                            <small>Full protection included</small>
+                        </div>
+                    </div>
+                    <div class="delivery-item">
+                        <div class="delivery-icon">💳</div>
+                        <div class="delivery-text">
+                            <strong>Secure Payment</strong>
+                            <small>All payment methods accepted</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="specifications">
+            <h2>Technical Specifications</h2>
+            <table class="specs-table">
+                <tr>
+                    <td>Driver Size</td>
+                    <td>40mm</td>
+                </tr>
+                <tr>
+                    <td>Frequency Response</td>
+                    <td>20Hz - 20,000Hz</td>
+                </tr>
+                <tr>
+                    <td>Impedance</td>
+                    <td>32 Ohms</td>
+                </tr>
+                <tr>
+                    <td>Bluetooth Version</td>
+                    <td>5.3</td>
+                </tr>
+                <tr>
+                    <td>Battery Life</td>
+                    <td>40 hours (with ANC off: 60 hours)</td>
+                </tr>
+                <tr>
+                    <td>Charging Time</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>250g</td>
+                </tr>
+                <tr>
+                    <td>Color Options</td>
+                    <td>Black, Silver, Rose Gold, Navy</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">JD</div>
+                        <div>
+                            <div class="reviewer-name">John Davis</div>
+                            <div class="reviewer-date">2 days ago</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="review-text">"Best headphones I've ever owned! The sound quality is incredible and the noise cancellation is top-notch. Battery lasts forever!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, #6366f1, #a855f7);">SM</div>
+                        <div>
+                            <div class="reviewer-name">Sarah Mitchell</div>
+                            <div class="reviewer-date">1 week ago</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star" style="opacity: 0.5;">★</span>
+                    </div>
+                    <p class="review-text">"Excellent product with outstanding comfort. Perfect for long listening sessions. Highly recommended for audiophiles!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">MC</div>
+                        <div>
+                            <div class="reviewer-name">Michael Chen</div>
+                            <div class="reviewer-date">3 weeks ago</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="review-text">"Premium quality at a reasonable price. The build is solid and the app integration is seamless. Worth every penny!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2 class="section-title">You Might Also Like</h2>
+            <div class="products-grid">
+                <div class="product-card" data-product-id="1">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=400&q=80" alt="Product 1">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-card-title">Premium Earbuds Pro</div>
+                        <div class="product-card-price">$149</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="2">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=80" alt="Product 2">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-card-title">Wireless Speaker Max</div>
+                        <div class="product-card-price">$199</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="3">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80" alt="Product 3">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-card-title">Bluetooth Headset Pro</div>
+                        <div class="product-card-price">$179</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="4">
+                    <div class="product-card-image">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=400&q=80" alt="Product 4">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-card-title">Gaming Headphones</div>
+                        <div class="product-card-price">$189</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LUXE Products. All rights reserved. | Privacy Policy | Terms & Conditions</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
